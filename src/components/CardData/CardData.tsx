@@ -12,6 +12,8 @@ interface CardDataProps {
 
 export const CardData = ({ cardData, cardName, units }: CardDataProps) => {
 
+    
+
     return (
         <View style={CardDataStyles.container}>
             <View style={CardDataStyles.valueContainer}>

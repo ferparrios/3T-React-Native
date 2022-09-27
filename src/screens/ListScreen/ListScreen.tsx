@@ -32,6 +32,7 @@ export const ListScreen = () => {
         })
     }, [])
 
+
     return (
         <SafeAreaView>
             <ListItem 
@@ -58,6 +59,7 @@ export const ListScreen = () => {
                 data={ipcInfo} 
                 cardData={monthlyIpc}
                 cardName={"Indice de Precios Al Consumidor"}
+                chartData={ipcInfo}
             />
             <ListItem 
                 title={"Unidad de Fomento"} 
@@ -72,6 +74,7 @@ export const ListScreen = () => {
                 data={utmfInfo}
                 cardData={monthlyUtm}
                 cardName={"Unidad Tributaria Mensual"}
+                chartData={utmfInfo}
             />
         </SafeAreaView>
     )

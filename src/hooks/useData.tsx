@@ -32,7 +32,7 @@ export const useData = () => {
     }
 
     const getIpc = async () => {
-        const resp = await financeData.get('/ipc/2022')
+        const resp = await financeData.get('/ipc/2021')
         setIpcInfo(resp.data.IPCs)
     }
 
@@ -42,7 +42,7 @@ export const useData = () => {
     }
 
     const getUtm = async () => {
-        const resp = await financeData.get('/utm/2010')
+        const resp = await financeData.get('/utm/2021')
         setUtmfInfo(resp.data.UTMs)
     }
 

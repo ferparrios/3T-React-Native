@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { ListItemStyles } from './ListItem.presets';
 import { Resp } from '../../interfaces/respInterface';
-import { useData } from '../../hooks/useData';
+// import { useData } from '../../hooks/useData';
 
 
 interface ListItemProps {
@@ -29,21 +29,6 @@ export const ListItem = ({
 }: ListItemProps) => {
 
   const navigator = useNavigation()
-
-  const {isLoading} = useData()
-
-
-  if (isLoading){
-    return(
-        <View
-            style={{
-                flex: 1, justifyContent: "center", alignItems: "center"
-            }}
-        >
-            <ActivityIndicator color={"red"} size={100} />
-        </View>
-    )
-}
 
   return (
     <SafeAreaView style={ListItemStyles.container}>
